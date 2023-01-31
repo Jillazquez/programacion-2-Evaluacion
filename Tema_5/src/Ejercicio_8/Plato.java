@@ -4,7 +4,6 @@ public class Plato {
 	private String nombre;
 	private String categoria;
 	private int precio;
-
 	public Plato(String nombre, String categoria, int precio) {
 		this.nombre = nombre;
 		this.categoria = categoria;
