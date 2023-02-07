@@ -20,7 +20,6 @@ public class Ej_2 {
 		int[]vector1 = new int [10];
 		int[]vector2 = new int [10];
 		int[]vector3 = new int [10];
-		double ayuda=0;
 		vector1 = llenoVector(vector1.length,10);
 		vector2 = llenoVector(vector2.length,10);
 		vector3 = llenoVector(vector3.length,10);

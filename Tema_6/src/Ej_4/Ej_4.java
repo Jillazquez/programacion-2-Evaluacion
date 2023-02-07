@@ -24,7 +24,7 @@ public class Ej_4 {
 		
 		
 		for(int i = 0 ;i <vector1.length;i++) {
-			System.out.println("Elemento ["+i+"] "+"("+vector1[i]+") "+cont[i]+"veces");
+			System.out.println("Elemento ["+i+"] "+"("+vector1[i]+") "+cont[i]+" veces");
 		}
 		
 	}

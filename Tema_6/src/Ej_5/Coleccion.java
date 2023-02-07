@@ -32,7 +32,7 @@ public class Coleccion {
     }
 	public void mostrarDiscos() {
         for (int i = 0; i < indice; i++) {
-            System.out.println(discos[i].toString());
+            System.out.println(discos[i]);
         }
     }
 }

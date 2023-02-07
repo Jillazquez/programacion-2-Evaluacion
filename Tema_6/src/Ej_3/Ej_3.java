@@ -7,14 +7,14 @@ public class Ej_3 {
 		// TODO Auto-generated method stub
 		
 		int[] vector = new int [10];
-		int mayor=0,posma=0,posme=0,menor=0;
+		int mayor=0,posma=0,posme=0,menor=vector.length;
 		vector = lleno.llenoVector(vector.length,10);
 		for (int i = 0; i<vector.length;i++) {
 			if(vector[i]>mayor) {
 				mayor=vector[i];
 				posma=i;
 			}
-			if(vector[i]<mayor) {
+			if(vector[i]<menor) {
 				menor=vector[i];
 				posme=i;
 			}

@@ -1,7 +1,7 @@
 package Ej_6;
 import java.util.Scanner;
 public class Empleado{
-	private int numeroE;
+	 int numeroE;
 	private String nombre;
 	
 	public Empleado(int numeroE, String nombre) {
@@ -35,7 +35,7 @@ public class Empleado{
 			
 		}
 		
-	 /*
+	 /*asdasd
 	  * Metodo que muestra por pantalla los datos del empleado
 	  */
 	 

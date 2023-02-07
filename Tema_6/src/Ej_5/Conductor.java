@@ -19,6 +19,8 @@ public class Conductor {
 		
 		coleccion.Metodisco(disco3);
 		coleccion.Metodisco(disco2);
+		coleccion.Metodisco(disco10);
+		coleccion.eliminarDisco(0);
 		coleccion.mostrarDiscos();
 	}
 
