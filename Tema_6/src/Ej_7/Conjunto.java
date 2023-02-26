@@ -41,7 +41,10 @@ public class Conjunto {
 	}
 
 	public void copiarVector() {
-		
+		int[] vector2 = new int [100];
+		for(int i = 0;i<vector.length;i++) {
+			vector2[i]=vector[i];
+		}
 	}
 
 	public boolean esMiembro(int numero) {

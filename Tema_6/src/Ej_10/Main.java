@@ -2,7 +2,14 @@ package Ej_10;
 
 import java.util.Scanner;
 
+/*
+ * Programa 3 en raya usando una matriz como tablero
+ * @author Juan Manuel Illazquez Duñan
+ */
 public class Main {
+	/*
+	 * Metodo que consulta si algun jugador ha ganado la partida o si es turno final empate
+	 */
 	public static boolean hasGanado(int[][] juego,int juegos) {
 		boolean acaba=false;
 		if(juegos<=8) {
@@ -109,6 +116,9 @@ public class Main {
 		}
 		return acaba;
 	}
+	/*
+	 * Metodo que muestra el estado actual del tablero con las X y O de cada jugador
+	 */
 	public static void imprimeTablero(int[][]juego) {
 		for (int i = 0; i < 3; i++) {
 			for (int j = 0; j < 3; j++) {
@@ -133,6 +143,7 @@ public class Main {
 		boolean acaba = false;
 		boolean repetido = false;
 		int posicion = 0, juegos = 0,ayuda=0,seguimos=0,ganauno=0,ganados=0,turno=0;
+		//Bucle infinito que controla si se sigue jugando o no
 		while (jugar == true) {
 			while (acaba == false) {
 				do {
@@ -246,6 +257,9 @@ public class Main {
 			System.out.println("Jugador 1 Quieres jugar otra vez? 0 Si 1 No");
 			seguimos= teclado.nextInt();
 			if(seguimos==0) {
+				System.out.println("Jugador 2 Quieres jugar otra vez? 0 Si 1 No");
+				seguimos= teclado.nextInt();
+				if (seguimos==0) {
 				jugar=true;
 				acaba=false;
 				juegos=0;
@@ -258,6 +272,11 @@ public class Main {
 					jugados[i]=0;
 				}
 			}else {
+				jugar=false;
+				System.out.println("El jugador uno ha ganado "+ganauno);
+				System.out.println("El jugador dos ha ganado "+ganados);	
+			}
+				}else {
 				jugar=false;
 			System.out.println("El jugador uno ha ganado "+ganauno);
 			System.out.println("El jugador dos ha ganado "+ganados);
