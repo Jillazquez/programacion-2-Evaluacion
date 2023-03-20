@@ -1,4 +1,4 @@
-package Ej_2;
+package Ej_3;
 
 import java.util.Scanner;
 
